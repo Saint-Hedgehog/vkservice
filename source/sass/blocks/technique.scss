@@ -1,0 +1,32 @@
+.technique {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  background-color: $color-alice-blue;
+}
+
+.technique h2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 28px;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: $color-dodger-blue;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    justify-content: center;
+    width: 80px;
+    height: 2px;
+    background: $color-silver;
+    border-radius: 6px;
+  }
+}

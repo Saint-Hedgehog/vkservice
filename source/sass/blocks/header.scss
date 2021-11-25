@@ -1,0 +1,229 @@
+.header {
+  position: fixed;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 80px;
+  padding: 0 120px;
+
+  background-color: $color-default-white;
+  box-shadow: 0px 0px 20px rgba(148, 148, 148, 0.25);
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  a,
+  p {
+    color: $color-white;
+  }
+
+  ul {
+    display: flex;
+    margin: 0;
+    margin-right: 20px;
+    margin-left: 60px;
+    padding: 0;
+
+    list-style: none;
+
+    li {
+      margin-right: 20px;
+    }
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+.header__wrapper {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__logo-container {
+  display: flex;
+}
+
+.header__logo-container p {
+  margin: 0;
+  margin-top: 1px;
+  margin-left: 20px;
+  font-size: 12px;
+  line-height: 14px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: $color-default-black;
+}
+
+.header__social,
+.header__messenger,
+.header__messenger a {
+  display: flex;
+  align-items: center;
+}
+
+.header__social {
+  margin-left: auto;
+  margin-right: 115px;
+}
+
+.header__social a {
+  width: 22px;
+  height: 22px;
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $color-dodger-blue;
+      transition: fill $default-transition-settings;
+    }
+  }
+
+  &:active svg {
+    fill: $color-blue;
+    transition: fill $default-transition-settings;
+  }
+}
+
+.header__social a svg,
+.header__messenger a svg {
+  fill: $color-silver;
+  transition: fill $default-transition-settings;
+}
+
+.header__social a:not(:first-child) {
+  width: 20px;
+  height: 20px;
+  margin-left: 17px;
+}
+
+.header__messenger {
+  position: relative;
+  margin-right: 13px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 99px;
+    width: 1px;
+    height: 16px;
+    background-color: $color-silver;
+  }
+}
+
+.header__messenger a {
+  font-family: $font-family--montserrat;
+  font-size: 12px;
+  line-height: 15px;
+  color: $color-silver;
+
+  &:hover,
+  &:focus {
+    color: $color-dodger-blue;
+    transition: color $default-transition-settings;
+
+    svg {
+      fill: $color-dodger-blue;
+      transition: fill $default-transition-settings;
+    }
+  }
+
+  &:active {
+    color: $color-blue;
+    transition: color $default-transition-settings;
+    svg {
+      fill: $color-blue;
+      transition: fill $default-transition-settings;
+    }
+  }
+}
+
+.header__messenger a:not(:first-child) {
+  padding-left: 9px;
+  margin-left: 9px;
+}
+
+.header__messenger svg {
+  margin-right: 8px;
+}
+
+.header__call {
+  display: grid;
+  grid-template-columns: 80px auto;
+  grid-column-gap: 6px;
+}
+
+.header__call-icon {
+  position: relative;
+  grid-row: 1/3;
+  fill: none;
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 48px;
+    height: 48px;
+    border: 1px solid $color-whisper;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 20px rgba(56, 149, 235, 0.49);
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+    transition: opacity $default-transition-settings;
+  }
+
+  &:active {
+    opacity: 0.5;
+    transition: opacity $default-transition-settings;
+  }
+}
+
+.header__call .header__call-namber {
+  padding-bottom: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: $color-default-black;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+    transition: opacity $default-transition-settings;
+  }
+
+  &:active {
+    opacity: 0.5;
+    transition: opacity $default-transition-settings;
+  }
+}
+
+.header__call p {
+  align-self: center;
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-black;
+}

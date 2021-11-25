@@ -1,0 +1,240 @@
+.intro {
+  position: relative;
+  padding-top: 180px;
+  padding-bottom: 153px;
+  background: url("../img/bg/circle.svg");
+  background-repeat: no-repeat;
+  background-size: 525px, 525px;
+  background-position: top 52px right 101px;
+}
+
+.intro h1 {
+  margin: 0;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.02em;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+
+.intro h1 span {
+  color: $color-dodger-blue;
+}
+
+.intro .container > p {
+  position: relative;
+  margin-top: 34px;
+  margin-bottom: 56px;
+  font-size: 18px;
+  line-height: 21px;
+  font-feature-settings: "pnum" on, "lnum" on;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: 0;
+    width: 80px;
+    height: 2px;
+    background: $cerulean-blue-to-dodger-blue;
+    border-radius: 6px;
+  }
+}
+
+.intro p span {
+  font-weight: 600;
+}
+
+.intro ul {
+  margin: 0;
+  padding-left: 54px;
+  list-style: none;
+}
+
+.intro li:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.intro li {
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+
+.intro li > svg {
+  position: absolute;
+  top: -4px;
+  left: -55px;
+  width: 40px;
+  height: 40px;
+}
+
+.intro li span {
+  font-weight: 600;
+}
+
+.intro__img-container {
+  position: absolute;
+  top: -180px;
+  right: 0px;
+  z-index: 2;
+}
+
+.intro__img-container img {
+  width: 100%;
+}
+
+.intro__transparent-round {
+  position: absolute;
+  top: 199px;
+  right: 28px;
+  z-index: 1;
+  width: 307px;
+  height: 307px;
+  background: $cerulean-blue-to-light-sky-blue;
+  border-radius: 50%;
+  opacity: 0.2;
+  filter: blur(50px);
+}
+
+.intro__discount {
+  position: absolute;
+  top: 275px;
+  right: -10px;
+  z-index: 3;
+  padding: 9px;
+  background: $color-default-white;
+  box-shadow: 0px 0px 30px rgba(141, 149, 165, 0.23);
+  border-radius: 30px 0px 0px 30px;
+}
+
+.intro__discount form {
+  display: grid;
+  grid-template-columns: 318px 277px;
+  column-gap: 59px;
+  padding: 23px 120px 24px 59px;
+  border: 1px solid rgba($color-whisper, 0.5);
+  border-radius: 30px 0px 0px 30px;
+}
+
+.intro__discount p {
+  margin-top: 15px;
+  margin-bottom: -1px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+
+.intro__discount p span:not(:last-child) {
+  color: $color-dodger-blue;
+}
+
+.intro__discount p span:last-child {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.intro__discount fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.intro__discount fieldset:last-of-type {
+  align-self: center;
+}
+
+.intro__discount-agreement-label {
+  position: relative;
+  padding-left: 34px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: $color-dim-gray;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.intro__discount-agreement-label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/svg/circle.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: center;
+}
+
+.intro__discount-agreement-label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  display: block;
+  width: 10px;
+  height: 8px;
+  background-image: url("../img/svg/check.svg");
+  background-repeat: no-repeat;
+  background-size: 10px 8px;
+  background-position: center;
+  opacity: 0;
+  transition: $default-transition-settings opacity;
+}
+
+input[type="checkbox"]:checked + .intro__discount-agreement-label::after {
+  opacity: 1;
+}
+
+.intro__discount-tel {
+  width: 277px;
+  height: 50px;
+  padding: 17px 18px;
+  font-size: 14px;
+  line-height: 16px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: $color-default-black;
+  border: 1px solid rgba($color-silver, 0.5);
+  border-radius: 8px;
+  filter: drop-shadow(0px 6px 20px rgba(56, 149, 235, 0.29));
+}
+
+.intro__discount-tel::placeholder {
+  color: $color-default-black;
+}
+
+.intro__discount-button {
+  width: 277px;
+  height: 50px;
+  padding: 15px 69px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: $color-default-white;
+  background: $cerulean-blue-to-dodger-blue;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0px 6px 20px rgba(56, 149, 235, 0.29);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+    transition: opacity $default-transition-settings;
+  }
+
+  &:active {
+    opacity: 0.5;
+    transition: opacity $default-transition-settings;
+  }
+}

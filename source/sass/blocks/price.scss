@@ -1,0 +1,119 @@
+.price {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.price h2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 57px;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: $color-dodger-blue;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    justify-content: center;
+    width: 80px;
+    height: 2px;
+    background: $color-silver;
+    border-radius: 6px;
+  }
+}
+
+.price table {
+  margin: 0 auto;
+  margin-bottom: 39px;
+  border-collapse: collapse;
+  border-radius: 16px;
+  box-shadow: 0px 0px 30px rgba(141, 149, 165, 0.23);
+}
+
+.price th,
+.price td {
+  width: 229px;
+  height: 65px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  background-color: $color-default-white;
+  border: 1px solid $color-alice-blue2;
+  border-collapse: collapse;
+
+  &:first-child {
+    width: 278px;
+    padding-left: 82px;
+    text-align: start;
+  }
+
+  &:last-child {
+    width: 235px;
+  }
+}
+
+.price th {
+  height: 66px;
+  color: $color-dodger-blue;
+
+  &:not(:first-child) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &:first-child {
+    border-top-left-radius: 16px;
+  }
+
+  &:last-child {
+    border-top-right-radius: 16px;
+  }
+}
+
+.price td {
+  &:first-child {
+    border-bottom-left-radius: 16px;
+  }
+
+  &:last-child {
+    border-bottom-right-radius: 16px;
+  }
+}
+
+
+.price__order-btn {
+  display: block;
+  width: 277px;
+  margin: 0 auto;
+  padding: 15px 15px 16px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: $color-default-white;
+  background: $cerulean-blue-to-dodger-blue;
+  border-radius: 8px;
+  box-shadow: 0px 6px 20px rgba(56, 149, 235, 0.29);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+    transition: opacity $default-transition-settings;
+  }
+
+  &:active {
+    opacity: 0.5;
+    transition: opacity $default-transition-settings;
+  }
+}

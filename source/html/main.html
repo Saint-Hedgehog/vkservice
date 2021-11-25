@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  @@include("source/html/base/head.html")
+  <title>ProjectName — Главная</title>
+
+</head>
+
+<body>
+
+  <div style="display: none;">
+    @@include("build/img/sprite_auto.svg")
+  </div>
+
+  <div class="wrapper">
+    @@include("source/html/base/header.html", {
+    "main": true
+    })
+
+    <main class="main">
+      <div class="main__decorate-line">
+        <section class="intro">
+          <div class="container">
+            <h1>Механизированная уборка и&nbsp;вывоз снега<br>в&nbsp;Москве и&nbsp;МО
+              <span>от&nbsp;240&nbsp;руб/м<sup>3</sup></span>
+            </h1>
+            <p>Наш менеджер подберет необходимую спецтехнику<br>для уборки снега
+              <span>на&nbsp;Ваш объект за&nbsp;10&nbsp;минут</span>
+            </p>
+            <ul>
+              <li>
+                <svg width="40" height="40">
+                  <use xlink:href="img/sprite_auto.svg#bulldozer"></use>
+                </svg>
+                Уборка и&nbsp;вывоз<br>снега <span>24/7</span>
+              </li>
+              <li>
+                <svg width="40" height="40">
+                  <use xlink:href="img/sprite_auto.svg#snowing"></use>
+                </svg>
+                Поставка спецтехники<br>по&nbsp;первому звонку или <span>с&nbsp;первым снегом</span>
+              </li>
+              <li>
+                <svg width="40" height="40">
+                  <use xlink:href="img/sprite_auto.svg#documents"></use>
+                </svg>
+                <span>Бронируем</span> технику<br>за&nbsp;Вашим объектом по&nbsp;договору
+              </li>
+            </ul>
+            <!--  -->
+            <div class="intro__transparent-round"></div>
+            <div class="intro__img-container">
+              <picture>
+                <!-- 1х: 808px; 2x: 1616px -->
+                <source type="image/webp"
+                  srcset="img/bg/snow-removal-tractor@1x.webp 1x, img/bg/snow-removal-tractor@2x.webp 2x">
+                <!-- 1х: 808px; 2x: 1616px -->
+                <img src="img/bg/snow-removal-tractor@1x.png" alt="Трактор для уборки снега" width="808" height="540"
+                  srcset="img/bg/snow-removal-tractor@2x.png 2x" loading="lazy">
+              </picture>
+            </div>
+            <!--  -->
+            <div class="intro__discount">
+              <form action="#" method="post">
+                <p>Получите <span>скидку&nbsp;15%</span><br><span>на&nbsp;абонентское обслуживание</span></p>
+                <!--  -->
+                <fieldset>
+                  <label for="discount-tel">
+                    <span class="visually-hidden">Введите номер телефона</span>
+                  </label>
+                  <input id="discount-tel" class="intro__discount-tel" type="tel" placeholder="номер телефона"
+                    name="discount-tel" required="">
+                </fieldset>
+                <!--  -->
+                <fieldset>
+                  <input id="discount-agreement" class="visually-hidden" type="checkbox" name="discount-agreement"
+                    checked>
+                  <label for="discount-agreement" class="intro__discount-agreement-label">
+                    Я согласен(а) с условиями передачи информации
+                  </label>
+                </fieldset>
+                <!--  -->
+                <button class="intro__discount-button" type="submit" aria-label="Получить скидку">Получить
+                  скидку</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!--  -->
+        <section class="work">
+          <div class="container">
+            <h2>Для кого мы&nbsp;работаем:</h2>
+            <ul>
+              <li>Торговые комплексы</li>
+              <li>Гипермаркеты, супермаркеты</li>
+              <li>Склады</li>
+              <li>Заводы</li>
+              <li>Жилые комплексы</li>
+            </ul>
+          </div>
+        </section>
+        <!--  -->
+        <section class="technique">
+          <h2>Спецтехника для вывоза снега</h2>
+          <div class="slider swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a href="#">
+                  <article>
+                    <picture>
+                      <!-- 1х: 220px; 2x: 440px -->
+                      <source type="image/webp"
+                        srcset="img/slides/technique@1x.webp 1x, img/slides/technique@2x.webp 2x">
+                      <!-- 1х: 220px; 2x: 440px -->
+                      <img src="img/slides/technique@1x.png" alt="Техника для уборки" width="220" height="184"
+                        srcset="img/slides/technique@2x.png 2x" loading="lazy">
+                    </picture>
+                    <h3>Колесноый экскаватор JCB JS 175W</h3>
+                    <p>от 14 000 Р</p>
+                  </article>
+                </a>
+              </div>
+              <!--  -->
+              <div class="swiper-slide">
+                <a href="#">
+                  <article>
+                    <picture>
+                      <!-- 1х: 220px; 2x: 440px -->
+                      <source type="image/webp"
+                        srcset="img/slides/technique@1x.webp 1x, img/slides/technique@2x.webp 2x">
+                      <!-- 1х: 220px; 2x: 440px -->
+                      <img src="img/slides/technique@1x.png" alt="Техника для уборки" width="220" height="184"
+                        srcset="img/slides/technique@2x.png 2x" loading="lazy">
+                    </picture>
+                    <h3>Колесноый экскаватор JCB JS 175W</h3>
+                    <p>от 14 000 Р</p>
+                  </article>
+                </a>
+              </div>
+              <!--  -->
+              <div class="swiper-slide">
+                <a href="#">
+                  <article>
+                    <picture>
+                      <!-- 1х: 220px; 2x: 440px -->
+                      <source type="image/webp"
+                        srcset="img/slides/technique@1x.webp 1x, img/slides/technique@2x.webp 2x">
+                      <!-- 1х: 220px; 2x: 440px -->
+                      <img src="img/slides/technique@1x.png" alt="Техника для уборки" width="220" height="184"
+                        srcset="img/slides/technique@2x.png 2x" loading="lazy">
+                    </picture>
+                    <h3>Колесноый экскаватор JCB JS 175W</h3>
+                    <p>от 14 000 Р</p>
+                  </article>
+                </a>
+              </div>
+              <!--  -->
+              <div class="swiper-slide">
+                <a href="#">
+                  <article>
+                    <picture>
+                      <!-- 1х: 220px; 2x: 440px -->
+                      <source type="image/webp"
+                        srcset="img/slides/technique@1x.webp 1x, img/slides/technique@2x.webp 2x">
+                      <!-- 1х: 220px; 2x: 440px -->
+                      <img src="img/slides/technique@1x.png" alt="Техника для уборки" width="220" height="184"
+                        srcset="img/slides/technique@2x.png 2x" loading="lazy">
+                    </picture>
+                    <h3>Колесноый экскаватор JCB JS 175W</h3>
+                    <p>от 14 000 Р</p>
+                  </article>
+                </a>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="slider__prev swiper-button-prev">
+              <svg width="30" height="30">
+                <use xlink:href="img/sprite_auto.svg#slider-btn"></use>
+              </svg>
+            </div>
+            <div class="slider__next swiper-button-next">
+              <svg width="30" height="30">
+                <use xlink:href="img/sprite_auto.svg#slider-btn"></use>
+              </svg>
+            </div>
+          </div>
+        </section>
+        <!--  -->
+        <section class="price">
+          <div class="container">
+            <h2>Стоимость вывоза снега</h2>
+            <table>
+              <caption class="visually-hidden">Стоимость вывоза снега</caption>
+              <tr>
+                <th>Условия</th>
+                <th>до 100 м<sup>3</sup></th>
+                <th>от 100 м<sup>3</sup></th>
+                <th>от 200 м<sup>3</sup></th>
+                <th>от 300 м<sup>3</sup></th>
+              <tr>
+                <td>Без погрузки</td>
+                <td>250 Р</td>
+                <td>240 Р</td>
+                <td>220 Р</td>
+                <td>200 Р</td>
+              </tr>
+              <tr>
+                <td>С погрузкой</td>
+                <td>420 Р</td>
+                <td>360 Р</td>
+                <td>290 Р</td>
+                <td>240 Р</td>
+              </tr>
+            </table>
+            <a href="#" class="price__order-btn" aria-label="Заказать">Заказать</a>
+          </div>
+        </section>
+        <section class="our-works">
+          <div class="container">
+            <h2>Наши работы</h2>
+          </div>
+          <div class="slider-works swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <article>
+                  <div class="slider-works__img-container">
+                    <picture>
+                      <!-- 1х: 293px; 2x: 585px -->
+                      <source type="image/webp"
+                        srcset="img/slides/our-works@1x.webp 1x, img/slides/our-works@2x.webp 2x">
+                      <!-- 1х: 293px; 2x: 585px -->
+                      <img src="img/slides/our-works@1x.jpg" alt="Наши работы" width="293" height="360"
+                        srcset="img/slides/our-works@2x.jpg 2x" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="slider-works__text-container">
+                    <h3>ТЦ “Галерея”</h3>
+                    <p>Механическая уборка<br>в&nbsp;зимний период</p>
+                    <ul>
+                      <li>Отчистка территорий от&nbsp;снега и льда с&nbsp;последующим вывозом на специальные
+                        площадки;</li>
+                      <li>Обработка очищенной территории химическими реагентами или песком;</li>
+                      <li>Очистка крыш, навесов, кровли и&nbsp;прочих объектов.</li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+              <!--  -->
+              <div class="swiper-slide">
+                <article>
+                  <div class="slider-works__img-container">
+                    <picture>
+                      <!-- 1х: 293px; 2x: 585px -->
+                      <source type="image/webp"
+                        srcset="img/slides/our-works@1x.webp 1x, img/slides/our-works@2x.webp 2x">
+                      <!-- 1х: 293px; 2x: 585px -->
+                      <img src="img/slides/our-works@1x.jpg" alt="Наши работы" width="293" height="360"
+                        srcset="img/slides/our-works@2x.jpg 2x" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="slider-works__text-container">
+                    <h3>ТЦ “Галерея”</h3>
+                    <p>Механическая уборка<br>в&nbsp;зимний период</p>
+                    <ul>
+                      <li>Отчистка территорий от&nbsp;снега и льда с&nbsp;последующим вывозом на специальные
+                        площадки;</li>
+                      <li>Обработка очищенной территории химическими реагентами или песком;</li>
+                      <li>Очистка крыш, навесов, кровли и&nbsp;прочих объектов.</li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+              <!--  -->
+              <div class="swiper-slide">
+                <article>
+                  <div class="slider-works__img-container">
+                    <picture>
+                      <!-- 1х: 293px; 2x: 585px -->
+                      <source type="image/webp"
+                        srcset="img/slides/our-works@1x.webp 1x, img/slides/our-works@2x.webp 2x">
+                      <!-- 1х: 293px; 2x: 585px -->
+                      <img src="img/slides/our-works@1x.jpg" alt="Наши работы" width="293" height="360"
+                        srcset="img/slides/our-works@2x.jpg 2x" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="slider-works__text-container">
+                    <h3>ТЦ “Галерея”</h3>
+                    <p>Механическая уборка<br>в&nbsp;зимний период</p>
+                    <ul>
+                      <li>Отчистка территорий от&nbsp;снега и льда с&nbsp;последующим вывозом на специальные
+                        площадки;</li>
+                      <li>Обработка очищенной территории химическими реагентами или песком;</li>
+                      <li>Очистка крыш, навесов, кровли и&nbsp;прочих объектов.</li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="slider-works__prev swiper-button-prev">
+              <svg width="30" height="30">
+                <use xlink:href="img/sprite_auto.svg#slider-btn"></use>
+              </svg>
+            </div>
+            <div class="slider-works__next swiper-button-next">
+              <svg width="30" height="30">
+                <use xlink:href="img/sprite_auto.svg#slider-btn"></use>
+              </svg>
+            </div>
+          </div>
+        </section>
+        <!-- <p><a href="#" data-modal="feedback">modal--feedback link</a></p> -->
+        <!-- <p><a href="#" data-modal="success">modal--success link</a></p> -->
+      </div>
+    </main>
+
+    @@include("source/html/base/footer.html")
+
+    @@include("source/html/base/modal.html", {
+    "name": "feedback"
+    })
+
+    @@include("source/html/base/modal.html", {
+    "name": "success",
+    "fitContent": true,
+    "noScale": true,
+    "mod": "some-mod"
+    })
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+// Colors
+//---------------------------------
+// https://www.htmlcsscolor.com/hex/334482
+
+// Default
+
+$color-default-black:             #000000;
+$color-default-white:             #ffffff;
+$color-transparent:               rgba(255, 255, 255, 0);
+
+// Base
+
+$color-black:                     #0e0e0e;
+$color-white:                     #f2f2f2;
+$color-blue:                      #2c39f2;
+
+$color-silver:                    #c4c4c4;
+$color-alice-blue:                #f9fafc;
+$color-alice-blue2:               #ecf6fd;
+$color-whisper:                   #E5E5E5;
+$color-dodger-blue:               #0586E8;
+$color-dim-gray:                  #656565;
+
+// Gradient
+
+$black-to-right:                  linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+
+$cerulean-blue-to-dodger-blue:    linear-gradient(45deg, #1d4fcf 0%, #0586e8 100%);
+$cerulean-blue-to-dodger-blue2:   linear-gradient(35.78deg, #1d4fcf 28.52%, #0586e8 78.94%);
+$cerulean-blue-to-light-sky-blue: linear-gradient(45deg, #1d4fcf 0%, #8bcdff 100%);
+
+// Typography
+//---------------------------------
+
+$font-family--raleway:                     "Raleway", "Arial", sans-serif;
+$font-family--montserrat:                  "Montserrat", "Verdana", sans-serif;
+
+// Animation
+//---------------------------------
+
+$default-transition-settings:       0.3s ease;
+$modal-transition-settings:         0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+// Viewports
+//---------------------------------
+
+$viewport--sm:                      320px;
+$viewport--md:                      768px;
+$viewport--lg:                      1024px;
+$viewport--xl:                      1440px;
+$viewport--xxl:                     1920px;
+
+// Retina
+//---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;
