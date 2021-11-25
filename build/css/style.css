@@ -1836,8 +1836,8 @@ button,
 
 .intro__transparent-round {
   position: absolute;
-  top: 199px;
-  right: 28px;
+  top: 99px;
+  right: -61px;
   z-index: 1;
   width: 307px;
   height: 307px;
@@ -2029,8 +2029,8 @@ input[type="checkbox"]:checked + .intro__discount-agreement-label::after {
 .work:before {
   content: "";
   position: absolute;
-  top: -1 12px;
-  left: -107px;
+  top: -118px;
+  left: -92px;
   width: 211px;
   height: 211px;
   background: linear-gradient(45deg, #1d4fcf 0%, #8bcdff 100%);
@@ -2259,8 +2259,24 @@ input[type="checkbox"]:checked + .intro__discount-agreement-label::after {
 }
 
 .price {
+  position: relative;
   padding-top: 60px;
   padding-bottom: 40px;
+}
+
+.price:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -32px;
+  z-index: -1;
+  width: 211px;
+  height: 211px;
+  background: linear-gradient(45deg, #1d4fcf 0%, #8bcdff 100%);
+  border-radius: 50%;
+  opacity: 0.1;
+  -webkit-filter: blur(50px);
+  filter: blur(50px);
 }
 
 .price h2 {

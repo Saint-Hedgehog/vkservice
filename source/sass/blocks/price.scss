@@ -1,6 +1,21 @@
 .price {
+  position: relative;
   padding-top: 60px;
   padding-bottom: 40px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: -32px;
+    z-index: -1;
+    width: 211px;
+    height: 211px;
+    background: $cerulean-blue-to-light-sky-blue;
+    border-radius: 50%;
+    opacity: 0.1;
+    filter: blur(50px);
+  }
 }
 
 .price h2 {
